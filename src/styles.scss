@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+
+
+@import "./scss/eshop/core/index.scss";
+
+@import "./scss/slider/slick.scss";

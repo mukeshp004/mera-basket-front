@@ -1,0 +1,23 @@
+#home-carousel {
+    height: 450px;
+
+    .carousel-item {
+        // height: 250px;
+        width: 100%;
+        position: relative;
+        border: 1x solid #f00;
+        img {
+            width: 100%;
+        }
+    }
+
+    .carousel-caption h1 {
+        font-size: 46px;
+        color: #F8694A;
+    }
+
+    .carousel-caption h3 {
+        font-size: 24px;
+        color: #fff;
+    }
+}

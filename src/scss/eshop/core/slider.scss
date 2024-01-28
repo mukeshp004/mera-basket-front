@@ -1,0 +1,49 @@
+/*=========================================================
+	05 -> HOME SLIDER
+===========================================================*/
+
+#home .home-wrap {
+    margin-left: 270px;
+}
+
+#home-banner .banner {
+    margin: 0px;
+}
+
+/*=========================================================
+	04 -> BANNERS
+===========================================================*/
+
+#home-banner {
+    width: 870px;
+    // height: 470px;
+    position: relative;
+    display: block;
+    
+    
+}
+
+.banner {
+    display: block;
+    position: relative;
+
+        img {
+
+        width: 100%;
+    }
+}
+
+
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+}

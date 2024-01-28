@@ -1,0 +1,30 @@
+[
+    {
+        "image": "./assets/img/product01.jpg",
+        "name": "Product One",
+        "discount": 20,
+        "oldPrice": 450,
+        "price": 300
+    },
+    {
+        "image": "./assets/img/product07.jpg",
+        "name": "Product Two",
+        "discount": 20,
+        "oldPrice": 200,
+        "price": 150
+    },
+    {
+        "image": "./assets/img/product06.jpg",
+        "name": "Product Three",
+        "discount": 20,
+        "oldPrice": 350,
+        "price": 300
+    },
+    {
+        "image": "./assets/img/product08.jpg",
+        "name": "Product Four",
+        "discount": 20,
+        "oldPrice": 550,
+        "price": 450
+    }
+]
