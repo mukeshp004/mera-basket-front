@@ -6,11 +6,12 @@ import { Banner } from '../../core/model/banners.model';
 import { IProduct } from '../../core/model/product.model';
 import { ProductService } from '../../shared/services/product.service';
 import { HomeService } from './home.service';
+import { ProductListItemComponent } from '../product/product-list-item/product-list-item.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, NgbCarouselModule],
+  imports: [CommonModule, NgbCarouselModule, ProductListItemComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   providers: [provideAnimations(), NgbCarouselConfig],
@@ -19,8 +20,9 @@ export class HomeComponent implements OnInit {
   itemsPerSlide = 2;
   showNavigationArrows = true;
   showNavigationIndicators = true;
+  
 
-  dealOfDays: IProduct[] = [];
+  productOnDealOfDays: IProduct[] = [];
   banners?: Banner[];
 
   constructor(
@@ -49,7 +51,7 @@ export class HomeComponent implements OnInit {
   getDealOfDays() {
     this.productService.getDayOfDelays().subscribe({
       next: (products: IProduct[]) => {
-        this.dealOfDays = products;
+        this.productOnDealOfDays = products.splice(1,3);
         console.log(products);
       },
     });

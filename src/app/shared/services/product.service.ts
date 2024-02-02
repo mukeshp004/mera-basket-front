@@ -13,4 +13,8 @@ export class ProductService {
   getDayOfDelays(): Observable<IProduct[]>  {
     return this.http.get<IProduct[]>('assets/db/new-collection.json');
   }
+  
+  getProducts(): Observable<IProduct[]>  {
+    return this.http.get<IProduct[]>('assets/db/new-collection.json');
+  }
 }
