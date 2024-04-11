@@ -14,6 +14,10 @@ export class ProductService {
     return this.http.get<IProduct[]>('assets/db/new-collection.json');
   }
   
+  getProduct(): Observable<IProduct>  {
+    return this.http.get<IProduct>('assets/db/product-detail.json');
+  }
+
   getProducts(): Observable<IProduct[]>  {
     return this.http.get<IProduct[]>('assets/db/new-collection.json');
   }

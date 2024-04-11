@@ -1,0 +1,142 @@
+<!-- section -->
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-6 col-lg-4 order-lg-1 order-2">Login</div>
+      <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
+        <div class="mb-lg-9 mb-5">
+          <h1 class="mb-1 h2 fw-bold">Get Start Shopping</h1>
+          <p>Welcome to EShop! Enter your email to get started.</p>
+        </div>
+
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" #form="ngForm">
+          <div class="row g-3">
+            <!-- col -->
+            <div class="col">
+              <!-- input -->
+              <label for="first-name" class="form-label visually-hidden"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                placeholder="First Name"
+                formControlName="first_name"
+              />
+
+              
+              <div class="invalid-feedback d-block" *ngIf="controls['first_name'].touched && controls['first_name'].errors?.['required']">Please enter First Name.</div>
+            </div>
+            <div class="col">
+              <!-- input -->
+              <label for="last-name" class="form-label visually-hidden"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="last-name"
+                placeholder="Last Name"
+                formControlName="last_name"
+              />
+              <div class="invalid-feedback d-block" *ngIf="controls['last_name'].touched && controls['last_name'].errors?.['required']">Please enter Last Name.</div>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label visually-hidden"
+                >email</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                formControlName="email"
+              />
+                <div class="invalid-feedback d-block" *ngIf="controls['email'].touched && controls['email'].errors?.['required']">Please enter email.</div>
+                <div class="invalid-feedback d-block" *ngIf="controls['email'].touched && controls['email'].errors?.['email']">Please enter valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="phone" class="form-label visually-hidden"
+                >phone</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Phone"
+                formControlName="phone"
+              />
+              <div class="invalid-feedback">Please enter email.</div>
+            </div>
+            <div class="col-12">
+              <div class="password-field position-relative">
+                <input
+                  [type]="passwordFieldType"
+                  class="form-control"
+                  id="password"
+                  placeholder="*****"
+                  formControlName="password"
+                />
+                <span
+                  ><i
+                    class="bi bi-eye-slash password-toggler"
+                    [class]="{
+                      'bi-eye-slash': !passwordToggleFlag,
+                      'bi-eye': passwordToggleFlag
+                    }"
+                    (click)="togglePassword()"
+                  >
+                  </i
+                ></span>
+                
+                <div class="invalid-feedback d-block" *ngIf="controls['email'].touched && controls['email'].errors?.['required']">Please enter password.</div>
+              </div>
+              
+            </div>
+            <div class="col-12">
+              <div class="password-field position-relative">
+                <input
+                  [type]="passwordFieldType"
+                  class="form-control"
+                  id="password_confirmation"
+                  placeholder="*****"
+                  formControlName="password_confirmation"
+                />
+                <span
+                  ><i
+                    class="bi bi-eye-slash password-toggler"
+                    [class]="{
+                      'bi-eye-slash': !passwordToggleFlag,
+                      'bi-eye': passwordToggleFlag
+                    }"
+                    (click)="togglePassword()"
+                  >
+                  </i
+                ></span>
+                
+                <div class="invalid-feedback d-block" *ngIf="controls['email'].touched && controls['email'].errors?.['required']">Please enter password Confirmation.</div>
+              </div>
+            </div>
+            <!-- btn -->
+            <div class="col-12 d-grid">
+              <button type="submit" class="btn btn-primary" [disabled]="!form.valid || isSubmitted">Register</button>
+            </div>
+
+            <!-- text -->
+            <p>
+              <small>
+                By continuing, you agree to our
+                <a href="#!">Terms of Service</a>
+                &amp;
+                <a href="#!">Privacy Policy</a>
+              </small>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- container -->
+</div>

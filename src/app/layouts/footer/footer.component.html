@@ -36,10 +36,10 @@
                     <h3 class="footer-header">My Account</h3>
                     <ul class="list-links">
                         <li><a href="#">My Account</a></li>
-                        <li><a href="#">My Wishlist</a></li>
+                        <li><a [routerLink]="['/wishlist']">My Wishlist</a></li>
                         <li><a href="#">Compare</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a [routerLink]="['/checkout']">Checkout</a></li>
+                        <li><a [routerLink]="['/login']">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,6 +56,7 @@
                         <li><a href="#">Shiping & Return</a></li>
                         <li><a href="#">Shiping Guide</a></li>
                         <li><a href="#">FAQ</a></li>
+                        <li><a [routerLink]="['contact']">Contact US</a></li>
                     </ul>
                 </div>
             </div>

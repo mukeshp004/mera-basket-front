@@ -1,6 +1,7 @@
 
 export interface IProduct {
     id?: number;
+    images?: string[];
     image?: string;
     name?: string;
     discount?: number;
@@ -10,9 +11,10 @@ export interface IProduct {
 
 export class Product implements IProduct {
     id?: number;
-    image?: string | undefined;
-    name?: string | undefined;
-    discount?: number | undefined;
-    oldPrice?: number | undefined;
-    price?: number | undefined;
+    images?: string[];
+    image?: string;
+    name?: string;
+    discount?: number;
+    oldPrice?: number;
+    price?: number;
 }

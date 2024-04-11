@@ -2,9 +2,6 @@
 	05 -> HOME SLIDER
 ===========================================================*/
 
-#home .home-wrap {
-    // margin-left: 270px;
-}
 
 #home-banner .banner {
     margin: 0px;
@@ -20,6 +17,11 @@
     position: relative;
     display: block;
 
+    img {
+        height: 470px;
+
+    }
+
 
 }
 
@@ -29,7 +31,6 @@
 
     img {
         width: 100%;
-        height: 470px;
     }
 }
 
@@ -245,4 +246,14 @@
 .product.product-single.product-hot .product-btns {
     opacity: 1;
     visibility: visible;
+}
+
+
+.product-btns button:not(:last-child) {
+    margin-right: 3px;
+}
+
+
+gallery {
+    background-color: #fff !important;
 }

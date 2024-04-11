@@ -5,8 +5,20 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
 @import "@fortawesome/fontawesome-free/scss/brands.scss";
 
+@import "./scss/bootstrap/extended-variable.scss";
+
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+// bootstrap icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+@import 'ngx-toastr/toastr-bs5-alert';
+
+
+@import '@angular/cdk/overlay-prebuilt.css';
 
 
 
